@@ -4,7 +4,7 @@
     {
       "id": "mc.annas-archive",
       "name": "AnnasArchive",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Search engine over LibGen, Z-Library, Sci-Hub and more; reads EPUB and PDF files.",
       "website": "https://annas-archive.gl",
       "rating": 1,
@@ -22,8 +22,8 @@
       "thumbnail": "AnnasArchive.png",
       "path": "AnnasArchive",
       "environment": "source",
-      "intents": 3152897,
-      "hash": "42b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba20"
+      "intents": 3152905,
+      "hash": "6aaffc516aaffc516aaffc516aaffc516aaffc516aaffc516aaffc516aaffc51"
     },
     {
       "id": "mc.archiveofourown",
@@ -39,7 +39,7 @@
       "path": "ArchiveOfOurOwn",
       "environment": "source",
       "intents": 3153193,
-      "hash": "7c5d05327c5d05327c5d05327c5d05327c5d05327c5d05327c5d05327c5d0532"
+      "hash": "4c6d63574c6d63574c6d63574c6d63574c6d63574c6d63574c6d63574c6d6357"
     },
     {
       "id": "mc.chikari-novels",
@@ -55,7 +55,7 @@
       "path": "ChikariNovels",
       "environment": "source",
       "intents": 2104328,
-      "hash": "00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d"
+      "hash": "30de330b30de330b30de330b30de330b30de330b30de330b30de330b30de330b"
     },
     {
       "id": "mc.cyrisia",
@@ -71,7 +71,7 @@
       "path": "Cyrisia",
       "environment": "source",
       "intents": 3153128,
-      "hash": "1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d"
+      "hash": "12f25f6012f25f6012f25f6012f25f6012f25f6012f25f6012f25f6012f25f60"
     },
     {
       "id": "mc.gutenberg",
@@ -92,7 +92,7 @@
       "path": "Gutenberg",
       "environment": "source",
       "intents": 3152904,
-      "hash": "73594c1973594c1973594c1973594c1973594c1973594c1973594c1973594c19"
+      "hash": "4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe"
     },
     {
       "id": "mc.internetarchive",
@@ -118,7 +118,7 @@
       "path": "InternetArchive",
       "environment": "source",
       "intents": 3152904,
-      "hash": "420efc52420efc52420efc52420efc52420efc52420efc52420efc52420efc52"
+      "hash": "121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66"
     },
     {
       "id": "mc.lnori",
@@ -134,7 +134,7 @@
       "path": "LNori",
       "environment": "source",
       "intents": 3152904,
-      "hash": "446240b1446240b1446240b1446240b1446240b1446240b1446240b1446240b1"
+      "hash": "7451df837451df837451df837451df837451df837451df837451df837451df83"
     },
     {
       "id": "mc.novel-archive",
@@ -150,7 +150,7 @@
       "path": "NovelArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "2d2681e02d2681e02d2681e02d2681e02d2681e02d2681e02d2681e02d2681e0"
+      "hash": "02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea"
     },
     {
       "id": "mc.novelbuddy",
@@ -166,7 +166,7 @@
       "path": "NovelBuddy",
       "environment": "source",
       "intents": 3152905,
-      "hash": "2501005d2501005d2501005d2501005d2501005d2501005d2501005d2501005d"
+      "hash": "54f09f1554f09f1554f09f1554f09f1554f09f1554f09f1554f09f1554f09f15"
     },
     {
       "id": "mc.novelfire",
@@ -182,7 +182,7 @@
       "path": "NovelFire",
       "environment": "source",
       "intents": 3152905,
-      "hash": "5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a"
+      "hash": "2dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad2"
     },
     {
       "id": "mc.scribblehub",
@@ -198,7 +198,7 @@
       "path": "ScribbleHub",
       "environment": "source",
       "intents": 3152905,
-      "hash": "79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b"
+      "hash": "49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc"
     },
     {
       "id": "mc.zlibrary",
@@ -222,7 +222,7 @@
       "path": "ZLibrary",
       "environment": "source",
       "intents": 3153129,
-      "hash": "6367e7b46367e7b46367e7b46367e7b46367e7b46367e7b46367e7b46367e7b4"
+      "hash": "6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d"
     }
   ]
 }
