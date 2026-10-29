@@ -1,0 +1,6 @@
+{
+  "query": "demon queen",
+  "contentId": "/series/2094923/i-am-not-a-demon-queen/",
+  "expect": "html",
+  "intents": ["preferences", "pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}

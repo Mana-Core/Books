@@ -1,0 +1,7 @@
+{
+  "query": "against intellectual monopoly",
+  "contentId": "d6e1dc51a50726f00ec438af21952a45",
+  "expect": "epub",
+  "secureStore": { "annas.key": "ANNAS_KEY" },
+  "intents": ["preferences", "search", "searchForm", "sortOptions", "providesChapters"]
+}

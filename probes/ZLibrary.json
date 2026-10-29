@@ -1,0 +1,20 @@
+{
+  "query": "dune frank herbert",
+  "contentId": "11735659/7659fb",
+  "expect": "epub",
+  "basicAuth": [
+    "ZLIB_EMAIL",
+    "ZLIB_PASSWORD"
+  ],
+  "intents": [
+    "preferences",
+    "pageResolver",
+    "authenticatable",
+    "basicAuth",
+    "basicAuthUsesEmail",
+    "search",
+    "searchForm",
+    "sortOptions",
+    "providesChapters"
+  ]
+}

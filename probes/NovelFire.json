@@ -1,0 +1,6 @@
+{
+  "query": "shadow slave",
+  "contentId": "/book/lord-of-the-mysteries",
+  "expect": "html",
+  "intents": ["preferences", "pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}

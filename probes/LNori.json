@@ -1,0 +1,6 @@
+{
+  "query": "overlord",
+  "contentId": "/series/2405/overlord",
+  "expect": "epub",
+  "intents": ["pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}

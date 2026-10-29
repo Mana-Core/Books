@@ -1,0 +1,6 @@
+{
+  "query": "shadow slave",
+  "contentId": "/shadow-slave",
+  "expect": "html",
+  "intents": ["preferences", "pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}

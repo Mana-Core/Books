@@ -1,0 +1,38 @@
+{
+    "name": "mana-books-extensions",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Web novel and ebook (EPUB/PDF) sources for the Mana app.",
+    "license": "GPL-3.0-or-later",
+    "repositoryName": "Mana Books",
+    "scripts": {
+        "build": "mana-dev build",
+        "dev": "mana-dev serve --watch",
+        "typecheck": "tsc --noEmit",
+        "lint": "oxlint src/ scripts/",
+        "check": "node scripts/check.mjs",
+        "verify": "node scripts/verify.mjs",
+        "new-source": "node scripts/new-source.mjs",
+        "format": "prettier --write src scripts",
+        "format:check": "prettier --check src scripts"
+    },
+    "mana": {
+        "src": "src/",
+        "out": "dist/",
+        "target": "es2020",
+        "minify": true,
+        "platform": "browser",
+        "repositoryName": "Mana Books"
+    },
+    "devDependencies": {
+        "@mana-app/dev": "^0.2.0",
+        "@mana-app/types": "^0.1.1",
+        "moment": "^2.29.4",
+        "oxlint": "~1.15.0",
+        "prettier": "^3.3.3",
+        "typescript": "^7.0.2"
+    },
+    "dependencies": {
+        "cheerio": "^1.2.0"
+    }
+}

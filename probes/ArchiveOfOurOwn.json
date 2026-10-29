@@ -1,0 +1,6 @@
+{
+  "query": "sherlock",
+  "contentId": "11035398",
+  "expect": "html",
+  "intents": ["preferences", "pageResolver", "search", "searchForm", "sortOptions", "providesChapters", "authenticatable", "webviewAuth"]
+}

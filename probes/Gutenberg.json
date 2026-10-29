@@ -1,0 +1,6 @@
+{
+  "query": "pride and prejudice",
+  "contentId": "1342",
+  "expect": "epub",
+  "intents": ["pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}
