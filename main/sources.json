@@ -1,0 +1,228 @@
+{
+  "repositoryName": "Mana Books",
+  "sources": [
+    {
+      "id": "mc.annas-archive",
+      "name": "AnnasArchive",
+      "version": "1.0.0",
+      "description": "Search engine over LibGen, Z-Library, Sci-Hub and more; reads EPUB and PDF files.",
+      "website": "https://annas-archive.gl",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US",
+        "de_DE",
+        "fr_FR",
+        "es_ES",
+        "it_IT",
+        "pt_BR",
+        "ru_RU",
+        "zh-CN",
+        "ja_JP"
+      ],
+      "thumbnail": "AnnasArchive.png",
+      "path": "AnnasArchive",
+      "environment": "source",
+      "intents": 3152897,
+      "hash": "73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f"
+    },
+    {
+      "id": "mc.archiveofourown",
+      "name": "ArchiveOfOurOwn",
+      "version": "1.0.0",
+      "description": "Archive of Our Own (AO3): millions of fan works, searchable by fandom, tag, rating and more.",
+      "website": "https://archiveofourown.org",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "ArchiveOfOurOwn.png",
+      "path": "ArchiveOfOurOwn",
+      "environment": "source",
+      "intents": 3153193,
+      "hash": "4b3500a74b3500a74b3500a74b3500a74b3500a74b3500a74b3500a74b3500a7"
+    },
+    {
+      "id": "mc.chikari-novels",
+      "name": "ChikariNovels",
+      "version": "1.0.0",
+      "description": "Web novels from Chikari (formerly Light Novel World), with clean chapter text.",
+      "website": "https://chikari.moe/novels",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "ChikariNovels.png",
+      "path": "ChikariNovels",
+      "environment": "source",
+      "intents": 2104328,
+      "hash": "321695fc321695fc321695fc321695fc321695fc321695fc321695fc321695fc"
+    },
+    {
+      "id": "mc.cyrisia",
+      "name": "Cyrisia",
+      "version": "1.0.0",
+      "description": "Official light novel EPUBs and translated web novels from cyrisia.com, no account needed.",
+      "website": "https://cyrisia.com",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "Cyrisia.png",
+      "path": "Cyrisia",
+      "environment": "source",
+      "intents": 3153128,
+      "hash": "142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7"
+    },
+    {
+      "id": "mc.gutenberg",
+      "name": "Gutenberg",
+      "version": "1.0.0",
+      "description": "Over 75,000 free public-domain ebooks as EPUB and plain text.",
+      "website": "https://www.gutenberg.org",
+      "rating": 0,
+      "supportedLanguages": [
+        "en_US",
+        "fr_FR",
+        "de_DE",
+        "es_ES",
+        "it_IT",
+        "pt_BR"
+      ],
+      "thumbnail": "Gutenberg.png",
+      "path": "Gutenberg",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "42313f9142313f9142313f9142313f9142313f9142313f9142313f9142313f91"
+    },
+    {
+      "id": "mc.internetarchive",
+      "name": "InternetArchive",
+      "version": "1.0.0",
+      "description": "Millions of freely downloadable books and texts from archive.org as EPUB, PDF and plain text.",
+      "website": "https://archive.org",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US",
+        "de_DE",
+        "fr_FR",
+        "es_ES",
+        "it_IT",
+        "pt_BR",
+        "nl_NL",
+        "ru_RU",
+        "pl_PL",
+        "ja_JP",
+        "zh-CN"
+      ],
+      "thumbnail": "InternetArchive.png",
+      "path": "InternetArchive",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "10e6f34810e6f34810e6f34810e6f34810e6f34810e6f34810e6f34810e6f348"
+    },
+    {
+      "id": "mc.lnori",
+      "name": "LNori",
+      "version": "1.0.0",
+      "description": "A curated library of officially translated light novels, one EPUB per volume.",
+      "website": "https://lnori.com",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "LNori.png",
+      "path": "LNori",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba"
+    },
+    {
+      "id": "mc.novel-archive",
+      "name": "NovelArchive",
+      "version": "1.0.0",
+      "description": "A large archive of web novels collected from many upstream sites.",
+      "website": "https://novelarchive.cc",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "NovelArchive.png",
+      "path": "NovelArchive",
+      "environment": "source",
+      "intents": 3152905,
+      "hash": "0401870504018705040187050401870504018705040187050401870504018705"
+    },
+    {
+      "id": "mc.novelbuddy",
+      "name": "NovelBuddy",
+      "version": "1.0.0",
+      "description": "Korean, Chinese and Japanese web novels and light novels from NovelBuddy.",
+      "website": "https://novelbuddy.me",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "NovelBuddy.png",
+      "path": "NovelBuddy",
+      "environment": "source",
+      "intents": 3152905,
+      "hash": "5629092a5629092a5629092a5629092a5629092a5629092a5629092a5629092a"
+    },
+    {
+      "id": "mc.novelfire",
+      "name": "NovelFire",
+      "version": "1.0.0",
+      "description": "Translated Chinese, Japanese and English web novels from Novel Fire and its mirrors.",
+      "website": "https://novelfire.net",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "NovelFire.png",
+      "path": "NovelFire",
+      "environment": "source",
+      "intents": 3152905,
+      "hash": "2c9710822c9710822c9710822c9710822c9710822c9710822c9710822c971082"
+    },
+    {
+      "id": "mc.scribblehub",
+      "name": "ScribbleHub",
+      "version": "1.0.0",
+      "description": "Original web novels and fan fiction from Scribble Hub.",
+      "website": "https://www.scribblehub.com",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "ScribbleHub.png",
+      "path": "ScribbleHub",
+      "environment": "source",
+      "intents": 3152905,
+      "hash": "4899cdb34899cdb34899cdb34899cdb34899cdb34899cdb34899cdb34899cdb3"
+    },
+    {
+      "id": "mc.zlibrary",
+      "name": "ZLibrary",
+      "version": "1.0.0",
+      "description": "Z-Library's catalogue of books as EPUB and PDF. Searching is open; downloading needs a free account.",
+      "website": "https://z-lib.sk",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US",
+        "de_DE",
+        "fr_FR",
+        "es_ES",
+        "it_IT",
+        "pt_BR",
+        "ru_RU",
+        "zh-CN",
+        "ja_JP"
+      ],
+      "thumbnail": "ZLibrary.png",
+      "path": "ZLibrary",
+      "environment": "source",
+      "intents": 3153129,
+      "hash": "6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b"
+    }
+  ]
+}
