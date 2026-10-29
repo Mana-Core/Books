@@ -5,6 +5,7 @@ import {
     CatalogRating,
     CloudflareError,
     SearchSortSection,
+    SectionStyle,
     UIListSection,
     type ChapterData,
     type Content,
@@ -21,9 +22,10 @@ import { SiteData } from "../lib/cache";
 import { isBrowserCheck, isHostFailure, SourceError, type ClientOptions } from "../lib/http";
 import { MirrorSet } from "../lib/mirrors";
 import { FilterReader, multiSelect, searchForm, sortOf } from "../lib/search";
+import type { HomeRow } from "../lib/sections";
 import { Secrets } from "../lib/settings";
-import { BookSource } from "../lib/source";
-import { withQuery } from "../lib/url";
+import { HomeSource } from "../lib/source";
+import { withQuery, type Query } from "../lib/url";
 import {
     FILTER,
     KEY_QUOTA,
@@ -53,18 +55,14 @@ type FastDownload = {
 };
 
 type AccountSummary = { downloads_left?: number; is_member?: number };
-
-/** Files can be large and partner servers slow; page requests keep the default timeout. */
 const FILE_TIMEOUT_MS = 180_000;
-
-/** How long one fetch of the search page answers every list read from it. */
 const FORM_PAGE_MS = 60_000;
 
-class AnnasArchive extends BookSource {
+class AnnasArchive extends HomeSource {
     readonly info = {
         id: "mc.annas-archive",
         name: "AnnasArchive",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "Search engine over LibGen, Z-Library, Sci-Hub and more; reads EPUB and PDF files.",
         website: MIRRORS[0] as string,
@@ -92,7 +90,6 @@ class AnnasArchive extends BookSource {
         marker: PROBE_MARKER,
     });
 
-    /** The key each mirror's account cookie was issued for; a changed key signs in again. */
     private readonly signedIn = new Map<string, string>();
 
     private formPage: { at: number; data: Promise<SearchFormData> } | undefined;
@@ -159,17 +156,29 @@ class AnnasArchive extends BookSource {
         ]);
     }
 
-    async search(request: SearchRequest): Promise<PagedSearchResult> {
-        const page = Math.max(1, request.page || 1);
+    protected rows(): HomeRow[] {
+        return [
+            {
+                id: "added",
+                title: "Recently Added",
+                style: SectionStyle.SimpleDoubleRow,
+                load: (page) => this.results(page, { q: "", sort: "newest_added" }),
+            },
+            {
+                id: "newest",
+                title: "Newest Publications",
+                load: (page) => this.results(page, { q: "", sort: "newest" }),
+            },
+        ];
+    }
 
-        // Only a chosen order needs the site's list; a plain search must not wait on it.
+    protected async find(request: SearchRequest): Promise<PagedSearchResult> {
         const sort = request.sort
             ? sortOf(request, await this.siteSorts.getOr(this.sorts)).id
             : RELEVANCE.id;
 
-        const path = withQuery("/search", {
+        return this.results(request.page, {
             q: request.query?.trim() ?? "",
-            page: page > 1 ? page : undefined,
             sort: sort === RELEVANCE.id ? undefined : sort,
             ext: tristate(request, FILTER.ext),
             content: tristate(request, FILTER.content),
@@ -177,6 +186,11 @@ class AnnasArchive extends BookSource {
             acc: tristate(request, FILTER.acc),
             src: tristate(request, FILTER.src),
         });
+    }
+
+    private results(requestedPage: number | undefined, query: Query): Promise<PagedSearchResult> {
+        const page = Math.max(1, requestedPage || 1);
+        const path = withQuery("/search", { ...query, page: page > 1 ? page : undefined });
 
         return this.mirrors.run(async (origin) => {
             const html = await this.page(origin, path);
@@ -200,11 +214,6 @@ class AnnasArchive extends BookSource {
         return { ...content, chapters: fileChapters(files, language) };
     }
 
-    /**
-     * A member key downloads from Anna's partner servers. Without one, or when the key
-     * cannot download this file, the free Library Genesis mirror is tried — it needs no
-     * browser check, but only holds the files that came from LibGen.
-     */
     async getChapterData(_contentId: string, chapterId: string): Promise<ChapterData> {
         const md5 = requireMd5(chapterId);
         const key = await Secrets.get(KEY_SECRET);
@@ -453,4 +462,4 @@ function explainRefusal(server: string): (html: string) => string {
     };
 }
 
-export class Target extends AnnasArchive {}
+export class Target extends AnnasArchive { }
