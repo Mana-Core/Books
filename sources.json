@@ -23,7 +23,7 @@
       "path": "AnnasArchive",
       "environment": "source",
       "intents": 3152897,
-      "hash": "73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f73debe8f"
+      "hash": "42b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba2042b6ba20"
     },
     {
       "id": "mc.archiveofourown",
@@ -39,7 +39,7 @@
       "path": "ArchiveOfOurOwn",
       "environment": "source",
       "intents": 3153193,
-      "hash": "4b3500a74b3500a74b3500a74b3500a74b3500a74b3500a74b3500a74b3500a7"
+      "hash": "7c5d05327c5d05327c5d05327c5d05327c5d05327c5d05327c5d05327c5d0532"
     },
     {
       "id": "mc.chikari-novels",
@@ -55,7 +55,7 @@
       "path": "ChikariNovels",
       "environment": "source",
       "intents": 2104328,
-      "hash": "321695fc321695fc321695fc321695fc321695fc321695fc321695fc321695fc"
+      "hash": "00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d00ee8d3d"
     },
     {
       "id": "mc.cyrisia",
@@ -71,7 +71,7 @@
       "path": "Cyrisia",
       "environment": "source",
       "intents": 3153128,
-      "hash": "142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7142ac1d7"
+      "hash": "1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d1cfd430d"
     },
     {
       "id": "mc.gutenberg",
@@ -92,7 +92,7 @@
       "path": "Gutenberg",
       "environment": "source",
       "intents": 3152904,
-      "hash": "42313f9142313f9142313f9142313f9142313f9142313f9142313f9142313f91"
+      "hash": "73594c1973594c1973594c1973594c1973594c1973594c1973594c1973594c19"
     },
     {
       "id": "mc.internetarchive",
@@ -118,7 +118,7 @@
       "path": "InternetArchive",
       "environment": "source",
       "intents": 3152904,
-      "hash": "10e6f34810e6f34810e6f34810e6f34810e6f34810e6f34810e6f34810e6f348"
+      "hash": "420efc52420efc52420efc52420efc52420efc52420efc52420efc52420efc52"
     },
     {
       "id": "mc.lnori",
@@ -134,7 +134,7 @@
       "path": "LNori",
       "environment": "source",
       "intents": 3152904,
-      "hash": "758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba758a49ba"
+      "hash": "446240b1446240b1446240b1446240b1446240b1446240b1446240b1446240b1"
     },
     {
       "id": "mc.novel-archive",
@@ -150,7 +150,7 @@
       "path": "NovelArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "0401870504018705040187050401870504018705040187050401870504018705"
+      "hash": "2d2681e02d2681e02d2681e02d2681e02d2681e02d2681e02d2681e02d2681e0"
     },
     {
       "id": "mc.novelbuddy",
@@ -166,7 +166,7 @@
       "path": "NovelBuddy",
       "environment": "source",
       "intents": 3152905,
-      "hash": "5629092a5629092a5629092a5629092a5629092a5629092a5629092a5629092a"
+      "hash": "2501005d2501005d2501005d2501005d2501005d2501005d2501005d2501005d"
     },
     {
       "id": "mc.novelfire",
@@ -182,7 +182,7 @@
       "path": "NovelFire",
       "environment": "source",
       "intents": 3152905,
-      "hash": "2c9710822c9710822c9710822c9710822c9710822c9710822c9710822c971082"
+      "hash": "5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a5dbf1c6a"
     },
     {
       "id": "mc.scribblehub",
@@ -198,7 +198,7 @@
       "path": "ScribbleHub",
       "environment": "source",
       "intents": 3152905,
-      "hash": "4899cdb34899cdb34899cdb34899cdb34899cdb34899cdb34899cdb34899cdb3"
+      "hash": "79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b79c1d95b"
     },
     {
       "id": "mc.zlibrary",
@@ -222,7 +222,7 @@
       "path": "ZLibrary",
       "environment": "source",
       "intents": 3153129,
-      "hash": "6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b6b700f4b"
+      "hash": "6367e7b46367e7b46367e7b46367e7b46367e7b46367e7b46367e7b46367e7b4"
     }
   ]
 }
