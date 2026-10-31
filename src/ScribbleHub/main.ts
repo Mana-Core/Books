@@ -55,7 +55,7 @@ class ScribbleHub extends HomeSource {
     readonly info = {
         id: "mc.scribblehub",
         name: "ScribbleHub",
-        version: "1.0.0",
+        version: "1.0.1",
         description: "Original web novels and fan fiction from Scribble Hub.",
         website: BASE_URL,
         rating: CatalogRating.MIXED,
@@ -64,11 +64,9 @@ class ScribbleHub extends HomeSource {
     };
 
     override readonly config = {
-        // The whole site sits behind a Cloudflare managed challenge.
         cloudflareResolutionURL: `${BASE_URL}/`,
     };
 
-    /** The sorts come from the series finder; see `getSortOptions`. */
     protected readonly sorts: SortOption[] = [];
 
     protected override readonly clientOptions: ClientOptions = {
@@ -342,4 +340,4 @@ function ordered(chapters: OrderedChapter[]): Chapter[] {
     return sequenceChapters(listed, LANGUAGE);
 }
 
-export class Target extends ScribbleHub {}
+export class Target extends ScribbleHub { }

@@ -73,7 +73,7 @@ class ArchiveOfOurOwn extends HomeSource implements WebViewAuthenticatable {
     readonly info = {
         id: "mc.archiveofourown",
         name: "ArchiveOfOurOwn",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "Archive of Our Own (AO3): millions of fan works, searchable by fandom, tag, rating and more.",
         website: BASE_URL,
@@ -339,9 +339,9 @@ class ArchiveOfOurOwn extends HomeSource implements WebViewAuthenticatable {
         const includeNotes = await this.prefs.get("notes");
 
         const html = await response.text();
-        const { title, body } = parseChapter(html, { url, includeNotes });
+        const { title, body, language } = parseChapter(html, { url, includeNotes });
 
-        return htmlChapter(response, chapterDocument(title, body));
+        return htmlChapter(response, chapterDocument(title, body, language));
     }
 
     // MARK: Authentication

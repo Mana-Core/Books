@@ -109,7 +109,8 @@ const KEPT_ATTRIBUTES: Record<string, string[]> = {
 
 /**
  * The reading body of a chapter as clean markup. Images stay, with absolute URLs: the app
- * downloads them through the source and leaves out any that fail to load.
+ * loads them through `getPageTransport` where a source has one, requests the URL as-is
+ * otherwise, and leaves out any that fail to load.
  */
 export function cleanChapterHtml(
     $: CheerioAPI,
@@ -137,7 +138,7 @@ export function cleanChapterHtml(
     body.find("*").each((_, element) => {
         const keep = KEPT_ATTRIBUTES[element.tagName] ?? [];
         for (const name of Object.keys(element.attribs)) {
-            if (!keep.includes(name)) delete element.attribs[name];
+            if (name !== "dir" && !keep.includes(name)) delete element.attribs[name];
         }
 
         if (element.tagName !== "a") return;
@@ -190,11 +191,19 @@ function restoreInlineTag(_tag: string, close: string, name?: string): string {
     return `<${close}${name.toLowerCase()}>`;
 }
 
-/** A standalone document for the book reader. */
+const RTL_LANGUAGES = ["ar", "ckb", "dv", "fa", "he", "iw", "ps", "sd", "ug", "ur", "yi"];
+
+/**
+ * A standalone document for the book reader, which takes a book's reading direction from
+ * `dir` rather than from anything the source declares.
+ */
 export function chapterDocument(title: string, bodyHtml: string, language = "en"): string {
+    const code = language.split(/[-_]/)[0]?.toLowerCase() ?? "";
+    const dir = RTL_LANGUAGES.includes(code) ? ' dir="rtl"' : "";
+
     return [
         "<!DOCTYPE html>",
-        `<html lang="${escapeHtml(language)}">`,
+        `<html lang="${escapeHtml(language)}"${dir}>`,
         `<head><meta charset="utf-8"><title>${escapeHtml(title)}</title></head>`,
         `<body>${bodyHtml}</body>`,
         "</html>",

@@ -8,6 +8,7 @@ import {
     SearchSortSection,
     SearchToggle,
     SectionStyle,
+    type BasicAuthenticatable,
     type ChapterData,
     type Content,
     type PagedSearchResult,
@@ -43,11 +44,11 @@ const SIGN_IN_REQUIRED =
     "Cyrisia only lets signed-in accounts download light novel volumes. " +
     "Sign in under the source's Account row (a free Cyrisia account works).";
 
-class Cyrisia extends HomeSource {
+class Cyrisia extends HomeSource implements BasicAuthenticatable {
     readonly info = {
         id: "mc.cyrisia",
         name: "Cyrisia",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "Official light novel EPUBs and translated web novels from cyrisia.com, no account needed.",
         website: BASE_URL,
@@ -63,6 +64,7 @@ class Cyrisia extends HomeSource {
 
     // Sign-in asks for an email; the site's login field takes a username too.
     readonly BasicAuthenticationUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL;
+    readonly BasicAuthUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL;
 
     private readonly catalogue = new Catalogue(() => this.http);
 

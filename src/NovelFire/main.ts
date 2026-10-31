@@ -78,7 +78,7 @@ class NovelFire extends HomeSource {
     readonly info = {
         id: "mc.novelfire",
         name: "NovelFire",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "Translated Chinese, Japanese and English web novels from Novel Fire and its mirrors.",
         website: MIRRORS[0] ?? "https://novelfire.net",

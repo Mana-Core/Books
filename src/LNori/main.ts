@@ -43,7 +43,7 @@ class LNori extends HomeSource {
     readonly info = {
         id: "mc.lnori",
         name: "LNori",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "A curated library of officially translated light novels, one EPUB per volume.",
         website: BASE_URL,

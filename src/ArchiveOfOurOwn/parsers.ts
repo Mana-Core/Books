@@ -336,7 +336,7 @@ export function parseNavigate(html: string, id: string): ListedChapter[] {
 export function parseChapter(
     html: string,
     options: { url: string; includeNotes: boolean },
-): { title: string; body: string } {
+): { title: string; body: string; language?: string } {
     const $ = load(html);
     const chapter = $("#chapters > .chapter").first();
     const scope = chapter.length ? chapter : $("#chapters").first();
@@ -382,7 +382,11 @@ export function parseChapter(
     const workTitle = text($("#workskin > .preface h2.title").first());
     const chapterTitle = text(chapter.find("h3.title").first());
 
-    return { title: chapterTitle || workTitle || "Chapter", body: parts.join("") };
+    return {
+        title: chapterTitle || workTitle || "Chapter",
+        body: parts.join(""),
+        language: $("dd.language").attr("lang"),
+    };
 }
 
 /** The signed-in user from the header greeting, which AO3 renders only for a session. */

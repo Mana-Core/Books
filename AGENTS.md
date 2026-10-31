@@ -25,6 +25,7 @@ PDF, UTF-8 text or HTML.
 - Chapter `index` is contiguous from 0 at the **oldest** chapter. `title` is printed verbatim.
 - Method presence is the feature flag. The app offers only the features whose methods exist, so don't define a method you can't back with real data.
 - Store content and chapter IDs as **paths without host** (`pathOf`), so switching mirrors never orphans library entries.
+- Removed from Mana: `willRequestImage` (use `getCoverTransport`/`getPageTransport`), `overrideDownloadRequest`, `getBrowsePageLinks`, `getReadChapterMarkers`, and the novel reading modes. `isRunnerSetup()` is now `isSourceSetup()`.
 
 ## Kit
 
@@ -68,11 +69,15 @@ const body = cleanChapterHtml($, $("#chapter-content").first(), { baseUrl: url, 
 return htmlChapter(response, chapterDocument(title, body));
 ```
 
-Images are kept with absolute URLs. The app downloads them through the source and leaves out any that fail, so a broken image never stops a chapter from opening.
+Images are kept with absolute URLs and load lazily through `getPageTransport(request)`, which returns an `HttpClient`; a source without one has the URL requested as-is, so define it if the site's images need a `Referer` or other headers. The app leaves out any image that fails, so a broken image never stops a chapter from opening, and downloads pack the images into the chapter for offline reading.
+
+Reading direction comes from the book itself: EPUB metadata, or the HTML `dir`. `chapterDocument` sets `dir="rtl"` from its `language` argument, so pass the language for any source that can serve right-to-left text. `recommendedPanelMode` is not used for books.
 
 ### Ebook chapter
 
 The source returns `fileChapter(this.http, url)`. The app sniffs EPUB/PDF/text from the bytes; JS never reads the file. Chapters come from `fileChapters([{ id, format, label?, bytes?, date? }], language)`, which keeps readable formats, puts EPUB first and titles them like `EPUB · 2.1 MB`.
+
+One file is one chapter, however many sections an EPUB contains. A ZIP without `META-INF/container.xml` is treated as an image archive (CBZ).
 
 ### Mirrors (sites with more than one domain)
 
@@ -85,16 +90,21 @@ const html = await this.mirrors.run((origin) => getText(this.http, `${origin}${p
 
 Use `config.cloudflareResolutionURL` only for single-domain sources. A getter for it is not supported.
 
-### Authentication (needs the Mana change that wires basic + WebView auth)
+### Authentication (Mana Build 55 or later)
+
+If a source declares several methods, Mana picks basic first, then WebView, then OAuth.
 
 - **Basic (email):**
+  - Declare `implements BasicAuthenticatable`, so a missing member fails the typecheck.
   - Define `getAuthenticatedUser()`, `handleUserSignOut()`, `handleBasicAuth(identifier, password)`.
-  - Define both `readonly BasicAuthenticationUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL` (read by `mana-dev`'s intent emulator) and `readonly BasicAuthUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL` (the TS type).
-  - Keep only the session tokens, in `Secrets`; never store the password.
+  - Define both `readonly BasicAuthenticationUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL` (read by `mana-dev`'s intent emulator) and `readonly BasicAuthUIIdentifier = BasicAuthenticationUIIdentifier.EMAIL` (read by the app; without it the sheet asks for a username).
+  - Keep only the session tokens, in `Secrets` or cookies; never store the password. Mana calls `getAuthenticatedUser()` once `handleBasicAuth` resolves.
 - **WebView:**
   - Define `getAuthenticatedUser()`, `handleUserSignOut()`, `getWebAuthRequestURL()` → `{ url }`, and `didReceiveSessionCookieFromWebAuthResponse(name)` → `{ state }`.
-  - The app syncs the WebView cookies into the shared cookie storage that `HttpClient` requests already use.
+  - `didReceive…` runs once per new cookie name set on the login host, its subdomains or its parent domain. Return `{ state: true }` once the session cookie appears; the user can also tap Done.
+  - The app copies WebView cookies into the shared cookie storage that `HttpClient` requests use when a flow ends, not on every request. On sign-out it calls `handleUserSignOut()`, then clears the login host's cookies.
 - `getAuthenticatedUser` returns `{ handle, displayName?, avatar?, info?: string[] }` or `null`.
+- A hand-built `Cookie` header is dropped on a cross-host redirect; the redirected request gets the new host's stored cookies.
 
 ## Build and serve
 

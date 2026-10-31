@@ -70,7 +70,7 @@ class NovelBuddy extends HomeSource {
     readonly info = {
         id: "mc.novelbuddy",
         name: "NovelBuddy",
-        version: "1.0.0",
+        version: "1.0.1",
         description: "Korean, Chinese and Japanese web novels and light novels from NovelBuddy.",
         website: MIRRORS[0] ?? "https://novelbuddy.me",
         rating: CatalogRating.MIXED,

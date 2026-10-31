@@ -63,7 +63,7 @@ class ChikariNovels extends HomeSource {
     readonly info = {
         id: "mc.chikari-novels",
         name: "ChikariNovels",
-        version: "1.0.0",
+        version: "1.0.1",
         description:
             "Web novels from Chikari (formerly Light Novel World), with clean chapter text.",
         website: `${BASE_URL}/novels`,

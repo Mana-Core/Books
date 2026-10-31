@@ -11,8 +11,8 @@ import type {
 import { SourceError } from "./http";
 
 /**
- * Returns HTML as the chapter's document. `document` is the typed path and takes
- * precedence over legacy text in the app; the host normalises it into an EPUB itself.
+ * Returns HTML as the chapter's document, the only form `ChapterData` types: `text` works
+ * in the app but is not declared in @mana-app/types. The host normalises it into an EPUB.
  */
 export function htmlChapter(response: HttpResponse, html: string): ChapterData {
     return { document: response.withBody(html, { contentType: "text/html; charset=utf-8" }) };

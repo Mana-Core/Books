@@ -78,7 +78,7 @@ class NovelArchive extends HomeSource {
     readonly info = {
         id: "mc.novel-archive",
         name: "NovelArchive",
-        version: "1.0.0",
+        version: "1.0.1",
         description: "A large archive of web novels collected from many upstream sites.",
         website: BASE_URL,
         rating: CatalogRating.MIXED,
