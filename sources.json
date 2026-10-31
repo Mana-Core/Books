@@ -23,12 +23,12 @@
       "path": "AnnasArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "6aaffc516aaffc516aaffc516aaffc516aaffc516aaffc516aaffc516aaffc51"
+      "hash": "2639996526399965263999652639996526399965263999652639996526399965"
     },
     {
       "id": "mc.archiveofourown",
       "name": "ArchiveOfOurOwn",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Archive of Our Own (AO3): millions of fan works, searchable by fandom, tag, rating and more.",
       "website": "https://archiveofourown.org",
       "rating": 1,
@@ -39,12 +39,12 @@
       "path": "ArchiveOfOurOwn",
       "environment": "source",
       "intents": 3153193,
-      "hash": "4c6d63574c6d63574c6d63574c6d63574c6d63574c6d63574c6d63574c6d6357"
+      "hash": "516efad5516efad5516efad5516efad5516efad5516efad5516efad5516efad5"
     },
     {
       "id": "mc.chikari-novels",
       "name": "ChikariNovels",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Web novels from Chikari (formerly Light Novel World), with clean chapter text.",
       "website": "https://chikari.moe/novels",
       "rating": 1,
@@ -55,12 +55,12 @@
       "path": "ChikariNovels",
       "environment": "source",
       "intents": 2104328,
-      "hash": "30de330b30de330b30de330b30de330b30de330b30de330b30de330b30de330b"
+      "hash": "00703d4e00703d4e00703d4e00703d4e00703d4e00703d4e00703d4e00703d4e"
     },
     {
       "id": "mc.cyrisia",
       "name": "Cyrisia",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Official light novel EPUBs and translated web novels from cyrisia.com, no account needed.",
       "website": "https://cyrisia.com",
       "rating": 1,
@@ -71,7 +71,7 @@
       "path": "Cyrisia",
       "environment": "source",
       "intents": 3153128,
-      "hash": "12f25f6012f25f6012f25f6012f25f6012f25f6012f25f6012f25f6012f25f60"
+      "hash": "34e185ec34e185ec34e185ec34e185ec34e185ec34e185ec34e185ec34e185ec"
     },
     {
       "id": "mc.gutenberg",
@@ -92,7 +92,7 @@
       "path": "Gutenberg",
       "environment": "source",
       "intents": 3152904,
-      "hash": "4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe4369a6fe"
+      "hash": "2bacc0872bacc0872bacc0872bacc0872bacc0872bacc0872bacc0872bacc087"
     },
     {
       "id": "mc.internetarchive",
@@ -118,12 +118,12 @@
       "path": "InternetArchive",
       "environment": "source",
       "intents": 3152904,
-      "hash": "121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66121f5d66"
+      "hash": "5cf70c885cf70c885cf70c885cf70c885cf70c885cf70c885cf70c885cf70c88"
     },
     {
       "id": "mc.lnori",
       "name": "LNori",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "A curated library of officially translated light novels, one EPUB per volume.",
       "website": "https://lnori.com",
       "rating": 1,
@@ -134,12 +134,12 @@
       "path": "LNori",
       "environment": "source",
       "intents": 3152904,
-      "hash": "7451df837451df837451df837451df837451df837451df837451df837451df83"
+      "hash": "03201ade03201ade03201ade03201ade03201ade03201ade03201ade03201ade"
     },
     {
       "id": "mc.novel-archive",
       "name": "NovelArchive",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "A large archive of web novels collected from many upstream sites.",
       "website": "https://novelarchive.cc",
       "rating": 1,
@@ -150,12 +150,12 @@
       "path": "NovelArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea02c91cea"
+      "hash": "78a44e5578a44e5578a44e5578a44e5578a44e5578a44e5578a44e5578a44e55"
     },
     {
       "id": "mc.novelbuddy",
       "name": "NovelBuddy",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Korean, Chinese and Japanese web novels and light novels from NovelBuddy.",
       "website": "https://novelbuddy.me",
       "rating": 1,
@@ -166,12 +166,12 @@
       "path": "NovelBuddy",
       "environment": "source",
       "intents": 3152905,
-      "hash": "54f09f1554f09f1554f09f1554f09f1554f09f1554f09f1554f09f1554f09f15"
+      "hash": "40283caf40283caf40283caf40283caf40283caf40283caf40283caf40283caf"
     },
     {
       "id": "mc.novelfire",
       "name": "NovelFire",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Translated Chinese, Japanese and English web novels from Novel Fire and its mirrors.",
       "website": "https://novelfire.net",
       "rating": 1,
@@ -182,12 +182,12 @@
       "path": "NovelFire",
       "environment": "source",
       "intents": 3152905,
-      "hash": "2dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad22dcf7ad2"
+      "hash": "55db603355db603355db603355db603355db603355db603355db603355db6033"
     },
     {
       "id": "mc.scribblehub",
       "name": "ScribbleHub",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Original web novels and fan fiction from Scribble Hub.",
       "website": "https://www.scribblehub.com",
       "rating": 1,
@@ -198,7 +198,7 @@
       "path": "ScribbleHub",
       "environment": "source",
       "intents": 3152905,
-      "hash": "49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc49d23acc"
+      "hash": "6332742163327421633274216332742163327421633274216332742163327421"
     },
     {
       "id": "mc.zlibrary",
@@ -222,7 +222,7 @@
       "path": "ZLibrary",
       "environment": "source",
       "intents": 3153129,
-      "hash": "6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d6ca8797d"
+      "hash": "026df06c026df06c026df06c026df06c026df06c026df06c026df06c026df06c"
     }
   ]
 }
