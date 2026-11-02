@@ -1,0 +1,6 @@
+{
+    "query": "shadow slave",
+    "contentId": "/35914-the-fourth-progenitor-hachiman-hikigaya",
+    "expect": "html",
+    "intents": ["pageResolver", "search", "searchForm", "sortOptions", "providesChapters"]
+}

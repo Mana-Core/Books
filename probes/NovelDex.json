@@ -1,0 +1,6 @@
+{
+    "query": "academy",
+    "contentId": "/series/novel/the-scandal-maker-has-returned",
+    "expect": "html",
+    "intents": ["pageResolver", "search", "searchForm", "sortOptions"]
+}

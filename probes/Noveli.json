@@ -1,0 +1,6 @@
+{
+    "query": "dragon",
+    "contentId": "/novel/dragon-blooded-war-goddragon-blooded-war-god",
+    "expect": "html",
+    "intents": ["pageResolver", "search", "searchForm", "sortOptions"]
+}
