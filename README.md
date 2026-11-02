@@ -25,7 +25,8 @@ https://mana-core.github.io/books
 | <img src="assets/NovelBuddy.png" width="22" align="top"/> **NovelBuddy** | novelbuddy.me | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.novelbuddy) |
 | <img src="assets/NovelFire.png" width="22" align="top"/> **Novel Fire** | novelfire.net, novelphoenix.com | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.novelfire) |
 | <img src="assets/Noveli.png" width="22" align="top"/> **Noveli** | noveli.to | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.noveli)>
-| <img src="assets/XNovel.png" width="22" align="top"/> **XNovel** | https://xnovel.me | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.xnovel)>
+| <img src="assets/XNovel.png" width="22" align="top"/> **XNovel** | xnovel.me | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.xnovel)>
+| <img src="assets/NovelDex.png" width="22" align="top"/> **NovelDex** | noveldex.io | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.noveldex)>
 | <img src="assets/ScribbleHub.png" width="22" align="top"/> **Scribble Hub** | scribblehub.com | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.scribblehub) |
 | <img src="assets/LNori.png" width="22" align="top"/> **LNori** | lnori.com | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.lnori) |
 | <img src="assets/Cyrisia.png" width="22" align="top"/> **Cyrisia** | cyrisia.com | [Install](https://mana-ios.github.io/install-source/?repo=https%3A%2F%2Fmana-core.github.io%2Fbooks&id=mc.cyrisia) |
