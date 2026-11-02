@@ -23,7 +23,7 @@
       "path": "AnnasArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "0b7a20f90b7a20f90b7a20f90b7a20f90b7a20f90b7a20f90b7a20f90b7a20f9"
+      "hash": "1c99789c1c99789c1c99789c1c99789c1c99789c1c99789c1c99789c1c99789c"
     },
     {
       "id": "mc.archiveofourown",
@@ -39,7 +39,7 @@
       "path": "ArchiveOfOurOwn",
       "environment": "source",
       "intents": 3153193,
-      "hash": "1fbb3d771fbb3d771fbb3d771fbb3d771fbb3d771fbb3d771fbb3d771fbb3d77"
+      "hash": "0e9be8ee0e9be8ee0e9be8ee0e9be8ee0e9be8ee0e9be8ee0e9be8ee0e9be8ee"
     },
     {
       "id": "mc.chikari-novels",
@@ -55,7 +55,7 @@
       "path": "ChikariNovels",
       "environment": "source",
       "intents": 2104328,
-      "hash": "3143803331438033314380333143803331438033314380333143803331438033"
+      "hash": "4262d7f14262d7f14262d7f14262d7f14262d7f14262d7f14262d7f14262d7f1"
     },
     {
       "id": "mc.cyrisia",
@@ -71,7 +71,7 @@
       "path": "Cyrisia",
       "environment": "source",
       "intents": 3153128,
-      "hash": "669540a8669540a8669540a8669540a8669540a8669540a8669540a8669540a8"
+      "hash": "77b49f5577b49f5577b49f5577b49f5577b49f5577b49f5577b49f5577b49f55"
     },
     {
       "id": "mc.gutenberg",
@@ -92,7 +92,7 @@
       "path": "Gutenberg",
       "environment": "source",
       "intents": 3152904,
-      "hash": "5d607de45d607de45d607de45d607de45d607de45d607de45d607de45d607de4"
+      "hash": "6e7fdd2e6e7fdd2e6e7fdd2e6e7fdd2e6e7fdd2e6e7fdd2e6e7fdd2e6e7fdd2e"
     },
     {
       "id": "mc.internetarchive",
@@ -118,7 +118,7 @@
       "path": "InternetArchive",
       "environment": "source",
       "intents": 3152904,
-      "hash": "715535da715535da715535da715535da715535da715535da715535da715535da"
+      "hash": "6035d64e6035d64e6035d64e6035d64e6035d64e6035d64e6035d64e6035d64e"
     },
     {
       "id": "mc.lnori",
@@ -134,7 +134,7 @@
       "path": "LNori",
       "environment": "source",
       "intents": 3152904,
-      "hash": "2e93a2872e93a2872e93a2872e93a2872e93a2872e93a2872e93a2872e93a287"
+      "hash": "3fb301ed3fb301ed3fb301ed3fb301ed3fb301ed3fb301ed3fb301ed3fb301ed"
     },
     {
       "id": "mc.novel-archive",
@@ -150,7 +150,7 @@
       "path": "NovelArchive",
       "environment": "source",
       "intents": 3152905,
-      "hash": "46f08d5046f08d5046f08d5046f08d5046f08d5046f08d5046f08d5046f08d50"
+      "hash": "35d1314635d1314635d1314635d1314635d1314635d1314635d1314635d13146"
     },
     {
       "id": "mc.novelbuddy",
@@ -166,7 +166,23 @@
       "path": "NovelBuddy",
       "environment": "source",
       "intents": 3152905,
-      "hash": "71dbfa9071dbfa9071dbfa9071dbfa9071dbfa9071dbfa9071dbfa9071dbfa90"
+      "hash": "7d04a5ee7d04a5ee7d04a5ee7d04a5ee7d04a5ee7d04a5ee7d04a5ee7d04a5ee"
+    },
+    {
+      "id": "mc.noveldex",
+      "name": "NovelDex",
+      "version": "1.0.0",
+      "description": "Web novels and light novels from NovelDex, with its genre and tag filters.",
+      "website": "https://noveldex.io",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "NovelDex.png",
+      "path": "NovelDex",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "75e7ac3175e7ac3175e7ac3175e7ac3175e7ac3175e7ac3175e7ac3175e7ac31"
     },
     {
       "id": "mc.novelfire",
@@ -182,7 +198,23 @@
       "path": "NovelFire",
       "environment": "source",
       "intents": 3152905,
-      "hash": "24279e5424279e5424279e5424279e5424279e5424279e5424279e5424279e54"
+      "hash": "1308432c1308432c1308432c1308432c1308432c1308432c1308432c1308432c"
+    },
+    {
+      "id": "mc.noveli",
+      "name": "Noveli",
+      "version": "1.0.0",
+      "description": "Web novels and light novels from Noveli.to, with its genre and status filters.",
+      "website": "https://noveli.to",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "Noveli.png",
+      "path": "Noveli",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "79e3ca3979e3ca3979e3ca3979e3ca3979e3ca3979e3ca3979e3ca3979e3ca39"
     },
     {
       "id": "mc.scribblehub",
@@ -198,7 +230,23 @@
       "path": "ScribbleHub",
       "environment": "source",
       "intents": 3152905,
-      "hash": "317eb5eb317eb5eb317eb5eb317eb5eb317eb5eb317eb5eb317eb5eb317eb5eb"
+      "hash": "205f573e205f573e205f573e205f573e205f573e205f573e205f573e205f573e"
+    },
+    {
+      "id": "mc.xnovel",
+      "name": "XNovel",
+      "version": "1.0.0",
+      "description": "English web novels from Xnovel, with its hot, latest and completed lists and search by genre and status.",
+      "website": "https://xnovel.me",
+      "rating": 1,
+      "supportedLanguages": [
+        "en_US"
+      ],
+      "thumbnail": "XNovel.png",
+      "path": "XNovel",
+      "environment": "source",
+      "intents": 3152904,
+      "hash": "08ef0f0f08ef0f0f08ef0f0f08ef0f0f08ef0f0f08ef0f0f08ef0f0f08ef0f0f"
     },
     {
       "id": "mc.zlibrary",
@@ -222,7 +270,7 @@
       "path": "ZLibrary",
       "environment": "source",
       "intents": 3153129,
-      "hash": "3421b1b03421b1b03421b1b03421b1b03421b1b03421b1b03421b1b03421b1b0"
+      "hash": "45410a8b45410a8b45410a8b45410a8b45410a8b45410a8b45410a8b45410a8b"
     }
   ]
 }
